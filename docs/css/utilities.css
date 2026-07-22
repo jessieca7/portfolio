@@ -135,28 +135,41 @@ h2::selection {
 /* Project cards: clean gradient backgrounds with always-visible text
    (no screenshots yet, so the hover-to-reveal image trick is replaced) */
 #projects .card {
-  background: linear-gradient(135deg, var(--bg-secondary-two), var(--card-background));
-  min-height: 160px;
+  background: linear-gradient(160deg, #2a2a2a 0%, #1a1a1a 100%);
+  min-height: 180px;
   display: flex;
   align-items: flex-end;
+  border-top: 3px solid var(--primary-color);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #projects .project-info {
   opacity: 1;
   width: 100%;
+  padding: 1rem 1.2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 60%, transparent);
+  border-radius: 0 0 8px 8px;
 }
 
 #projects .project-bio {
   position: static;
-  color: var(--text-color);
 }
 
 #projects .project-bio h3 {
   color: var(--primary-color);
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+#projects .project-bio p {
+  color: #cccccc;
+  font-size: 0.82rem;
+  line-height: 1.5;
 }
 
 #projects .card:hover {
-  box-shadow: var(--shadow);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   transform: translateY(-4px);
 }
 
@@ -204,7 +217,7 @@ h2::selection {
 .artifact2-preview {
   width: 100%;
   max-width: 300px;
-  background: var(--bg-secondary-two);
+  background: #f5f5f5;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: var(--shadow);
@@ -213,6 +226,7 @@ h2::selection {
   align-items: center;
   gap: 1rem;
   flex-shrink: 0;
+  border: 1px solid #e0e0e0;
 }
 
 .artifact2-icon {
@@ -231,19 +245,19 @@ h2::selection {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0.6;
+  color: #888;
   margin-bottom: 0.2rem;
 }
 
 .artifact2-btn {
   display: block;
   padding: 0.6rem 0.8rem;
-  background: var(--card-background);
+  background: #ffffff;
   border-radius: 6px;
   font-size: 0.85rem;
-  color: var(--text-color);
+  color: #333333;
   text-decoration: none;
-  border: 1px solid rgba(128,128,128,0.2);
+  border: 1px solid #d0d0d0;
   transition: all 0.2s ease;
 }
 
@@ -256,10 +270,12 @@ h2::selection {
 .artifact2-skills {
   font-size: 0.88rem;
   margin-top: 0.5rem;
-  padding: 0.75rem;
-  background: var(--bg-secondary-two);
-  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  background: #f0f0f0;
+  border-left: 3px solid var(--primary-color);
+  border-radius: 0 6px 6px 0;
   line-height: 1.7;
+  color: #333;
 }
 
 @media (max-width: 768px) {

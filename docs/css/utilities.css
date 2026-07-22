@@ -213,7 +213,7 @@ h2::selection {
   }
 }
 
-/* Artifact 2 file download card — forced light colors, dark mode proof */
+/* Artifact 2 file download card — fully hardcoded, dark mode proof */
 .artifact2-preview {
   width: 100%;
   max-width: 300px;
@@ -226,7 +226,7 @@ h2::selection {
   align-items: center;
   gap: 1rem;
   flex-shrink: 0;
-  border: 2px solid #e0e0e0 !important;
+  border: 2px solid #dddddd !important;
 }
 
 .artifact2-icon {
@@ -241,46 +241,52 @@ h2::selection {
 }
 
 .artifact2-label {
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #888888 !important;
+  background: transparent !important;
   margin-bottom: 0.2rem;
 }
 
-.artifact2-btn {
-  display: block;
-  padding: 0.65rem 0.9rem;
-  background: #f8f8f8 !important;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  color: #222222 !important;
-  text-decoration: none;
-  border: 1px solid #cccccc !important;
+a.artifact2-btn,
+a.artifact2-btn:link,
+a.artifact2-btn:visited {
+  display: block !important;
+  padding: 0.65rem 0.9rem !important;
+  background: #eeeeee !important;
+  border-radius: 6px !important;
+  font-size: 0.85rem !important;
+  color: #111111 !important;
+  text-decoration: none !important;
+  border: 1px solid #bbbbbb !important;
   transition: all 0.2s ease;
-  font-weight: 500;
+  font-weight: 600 !important;
 }
 
-.artifact2-btn:hover {
+a.artifact2-btn:hover {
   background: #f5a623 !important;
   color: #ffffff !important;
   border-color: #f5a623 !important;
 }
 
-.artifact2-skills {
-  font-size: 0.88rem;
-  margin-top: 0.5rem;
-  padding: 0.8rem 1rem;
-  background: #fff8ee !important;
-  border-left: 4px solid #f5a623;
+.artifact2-skills,
+.artifact2-skills p,
+.artifact2-skills span,
+.artifact2-skills strong,
+.artifact2-skills * {
+  font-size: 0.88rem !important;
+  padding: 0.8rem 1rem !important;
+  background: #fff3d6 !important;
+  border-left: 4px solid #f5a623 !important;
   border-radius: 0 6px 6px 0;
-  line-height: 1.7;
-  color: #333333 !important;
+  line-height: 1.7 !important;
+  color: #111111 !important;
 }
 
-.artifact2-skills strong {
-  color: #222222 !important;
+.artifact2-skills {
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {

@@ -200,6 +200,74 @@ h2::selection {
   }
 }
 
+/* Artifact 2 file download card */
+.artifact2-preview {
+  width: 100%;
+  max-width: 300px;
+  background: var(--bg-secondary-two);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.artifact2-icon {
+  font-size: 3rem;
+}
+
+.artifact2-files {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.artifact2-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  margin-bottom: 0.2rem;
+}
+
+.artifact2-btn {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  background: var(--card-background);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  text-decoration: none;
+  border: 1px solid rgba(128,128,128,0.2);
+  transition: all 0.2s ease;
+}
+
+.artifact2-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.artifact2-skills {
+  font-size: 0.88rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: var(--bg-secondary-two);
+  border-radius: 6px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .artifact2-preview {
+    max-width: 100%;
+  }
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .header-container {

@@ -271,23 +271,6 @@ a.artifact2-btn:hover {
   border-color: #f5a623 !important;
 }
 
-.artifact2-skills,
-.artifact2-skills p,
-.artifact2-skills span,
-.artifact2-skills strong,
-.artifact2-skills * {
-  font-size: 0.88rem !important;
-  padding: 0.8rem 1rem !important;
-  background: #fff3d6 !important;
-  border-left: 4px solid #f5a623 !important;
-  border-radius: 0 6px 6px 0;
-  line-height: 1.7 !important;
-  color: #111111 !important;
-}
-
-.artifact2-skills {
-  margin-top: 0.5rem;
-}
 
 @media (max-width: 768px) {
   .artifact2-preview {
